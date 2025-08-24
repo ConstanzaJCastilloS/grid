@@ -14,12 +14,12 @@
 .main-container {
 
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 0.5fr 3fr 1fr;
     grid-template-rows: 0.5fr 4fr 0.25fr;
     grid-template-areas:  'header header header'
                           'menu main main'
                           'footer footer footer';
-    height: 100%;
+    height: 80vh;
 }
 
 .header {
@@ -53,6 +53,7 @@ nav {
     border-radius: 50%;
     object-fit: cover;
     margin-top: 1vh;
+    margin-left: 1.5vh;
 }
 
 
@@ -77,15 +78,19 @@ nav {
 }
 .footer {
     grid-area: footer;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2%;
     background-color: rgb(243, 119, 243);
-    color: white;
 }
 
+.footer li {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    color: rgb(255, 255, 255);
+}
 
 
 
