@@ -1,5 +1,48 @@
 * { 
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
+
+.figtree-uniquifier {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items:center;
+    padding: 0.5vh;
+    background-color: rgb(255, 122, 255);
+    height: 12vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo img {
+    max-width: 10vh;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1vh;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
