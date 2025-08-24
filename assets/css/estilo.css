@@ -73,9 +73,34 @@ nav {
 }
 
 .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-area: main;
     background-color: rgb(255, 255, 255);
 }
+
+.caja-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caja-producto img {
+    padding:  5vh;
+    max-width: 40vh;
+    object-fit: cover;
+ }
+
+.texto-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+
+
+
 .footer {
     grid-area: footer;
     display: flex;
